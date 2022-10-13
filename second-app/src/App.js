@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import TestComponent from './component/TestComponent';
-import LifeCyclePractice from './component/LifeCyclePractice';
+// import HookUseCb from './component/HookUseCb';
+// import HookPractice from './component/HookPractice';
+// import TestComponent from './component/TestComponent';
+import HookTest from './component/HookTest';
+// import HookUseMemo from './component/HookUseMemo';
 
 class App extends Component {
-  state = {
-    value: true
-  }
-
   render() {
     return (
       <div>
-        <div>
-          <button onClick={() => { this.setState({ value: !this.state.value }) }}>컴포넌트 바껴라!</button>
-        </div>
-
-        <hr style={{ margin: "50px 0" }}></hr>
-
-        {this.state.value ? <LifeCyclePractice /> : <TestComponent />}
+        <HookTest></HookTest>
+        {/* <HookUseMemo></HookUseMemo> */}
+        {/* <HookUseCb></HookUseCb> */}
       </div>
     );
   }
